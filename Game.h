@@ -43,8 +43,6 @@ private:
     std::string name;
     double price;
     double tax;
-    double itemWeight;
-    std::string productDimensions;
 };
 
 

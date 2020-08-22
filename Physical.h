@@ -4,9 +4,21 @@
 
 #ifndef LAB04_SOLID_PHYSICAL_H
 #define LAB04_SOLID_PHYSICAL_H
+#include <sstream>
 
+class Physical: public Game  {
+public:
 
-class Physical {
+Physical()
+Physical(string,double,double, double,string)
+getProductDimensions():string
+setProductDimensions(string):void
+double getItemWeight()
+void setItemWeight(double)
+
+private:
+string productDimensions;
+double itemWeight;
 
 };
 
