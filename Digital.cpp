@@ -1,5 +1,38 @@
 //
-// Created by jeremy solis on 23-ago.-20.
+// Created by Karina Hernandez on 23-ago.-20.
 //
 
 #include "Digital.h"
+
+Digital::Digital():Game(){
+  filePath = " ";
+}
+
+Digital::Digital(string name,double price,double tax, string filePath):Game(name,price,tax){
+  this->filePath = filePath;
+}
+
+string Digital::getFilePath(){
+  return filePath;
+}
+
+void Digital::setFilePath(std::string filePath){
+  this->filePath = filePath;
+}
+
+string Digital::replace(){
+  stringstream d;
+  d<<""<<endl;
+  return d.str();
+}
+
+double Digital::discount(){
+  return getPrice()-getPrice()*0.15;
+}
+
+string Digital::toString(){
+  stringstream d;
+  d<<Game::toString()<<endl;
+  d<<"Price with Discount: "<<discount()<<endl;
+  d<<"File Path: "<<getFilePath()<<endl;
+}
