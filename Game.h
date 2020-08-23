@@ -4,7 +4,10 @@
 
 #ifndef LAB04_SOLID_GAME_H
 #define LAB04_SOLID_GAME_H
+#include <string>
+#include <ostream>
 #include <sstream>
+using namespace std;
 
 class Game {
 public:
@@ -12,7 +15,7 @@ public:
 
     Game(const std::string &name, double price, double tax);
 
-    Game(const std::string &name, double price, double itemWeight, const std::string &productDimensions);
+    Game(const std::string &name, double price);
 
     const std::string &getName() const;
 
@@ -26,13 +29,6 @@ public:
 
     void setTax(double tax);
 
-    double getItemWeight() const;
-
-    void setItemWeight(double itemWeight);
-
-    const std::string &getProductDimensions() const;
-
-    void setProductDimensions(const std::string &productDimensions);
 
     double calculatePriceWithTax();
 

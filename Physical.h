@@ -5,16 +5,17 @@
 #ifndef LAB04_SOLID_PHYSICAL_H
 #define LAB04_SOLID_PHYSICAL_H
 #include <sstream>
+#include "Game.h"
 
 class Physical: public Game  {
 public:
 
-Physical()
-Physical(string,double,double, double,string)
-getProductDimensions():string
-setProductDimensions(string):void
-double getItemWeight()
-void setItemWeight(double)
+Physical();
+Physical(string,double,double,double,string);
+string getProductDimensions();
+void setProductDimensions(string);
+double getItemWeight();
+void setItemWeight(double);
 
 private:
 string productDimensions;
