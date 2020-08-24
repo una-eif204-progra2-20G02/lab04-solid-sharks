@@ -6,8 +6,9 @@
 #define LAB04_SOLID_PHYSICAL_H
 #include <sstream>
 #include "Game.h"
+#include "IShip.h"
 
-class Physical: public Game  {
+class Physical: public Game, IShip  {
 public:
 
 Physical();
@@ -16,6 +17,7 @@ string getProductDimensions();
 void setProductDimensions(string);
 double getItemWeight();
 void setItemWeight(double);
+string ship();
 
 private:
 string productDimensions;
