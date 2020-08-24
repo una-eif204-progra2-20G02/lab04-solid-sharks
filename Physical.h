@@ -8,7 +8,7 @@
 #include "Game.h"
 #include "IShip.h"
 
-class Physical: public Game, IShip  {
+class Physical: public Game, IShip, IDiscount  {
 public:
 
 Physical();
@@ -18,6 +18,8 @@ void setProductDimensions(string);
 double getItemWeight();
 void setItemWeight(double);
 string ship();
+string toString();
+double discount override();
 
 private:
 string productDimensions;
