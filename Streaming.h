@@ -5,8 +5,9 @@
 #ifndef LAB04_SOLID_STREAMING_H
 #define LAB04_SOLID_STREAMING_H
 #include "Game.h"
+#include "IReplace"
 
-class Streaming : public Game{
+class Streaming : public Game,IReplace{
   public:
   Streaming();
   Streaming(string,double,double);

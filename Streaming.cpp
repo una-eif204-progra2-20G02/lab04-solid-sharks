@@ -20,6 +20,6 @@ string Streaming::toString(){
 
 string Streaming::replace(){
   stringstream s;
-  s<<""<<endl;
+  s<<"this product will have a replacement."<<endl;
   return s.str();
 }

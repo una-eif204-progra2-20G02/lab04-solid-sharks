@@ -5,8 +5,10 @@
 #ifndef LAB04_SOLID_SHARKS_DIGITAL_H
 #define LAB04_SOLID_SHARKS_DIGITAL_H
 #include "Game.h"
+#include "IDiscount"
+#include "IReplace"
 
-class Digital : public Game{
+class Digital : public Game,IDiscount,IReplace{
   public:
   Digital();
   Digital(string,double,double,string);

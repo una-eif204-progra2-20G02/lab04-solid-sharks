@@ -22,7 +22,7 @@ void Digital::setFilePath(std::string filePath){
 
 string Digital::replace(){
   stringstream d;
-  d<<""<<endl;
+  d<<"this product will have a replacement."<<endl;
   return d.str();
 }
 
