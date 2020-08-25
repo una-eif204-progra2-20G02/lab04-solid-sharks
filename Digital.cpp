@@ -35,4 +35,5 @@ string Digital::toString(){
   d<<Game::toString()<<endl;
   d<<"Price with Discount: "<<discount()<<endl;
   d<<"File Path: "<<getFilePath()<<endl;
+  return d.str();
 }

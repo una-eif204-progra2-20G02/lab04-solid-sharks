@@ -9,5 +9,5 @@
 
 class IShip{
 public:
-    virtual std::string replace();
+    virtual std::string ship() = 0;
 };

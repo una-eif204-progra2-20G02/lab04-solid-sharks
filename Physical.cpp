@@ -9,16 +9,17 @@ Physical::Physical():Game(){
   itemWeight = 0.0;
 }
 
-Physical::Physical(string name,double price,double tax, string productDimensions, double itemWeight):Game(name,price,tax){
+Physical::Physical(string name,double price,double tax, double itemWeight, string productDimensions):Game(name,price,tax){
   this->productDimensions = productDimensions;
-  this->itemWeight = itemWeight;)}
+  this->itemWeight = itemWeight;
+}
 
 string Physical::getProductDimensions(){
   return productDimensions;
 }
 
-void Physical::setProductDimension(std::string productDimension){
-  this->productDimensions = productDimensions;
+void Physical::setProductDimensions(std::string productDimension){
+  this->productDimensions = productDimension;
 }
 
 double Physical::getItemWeight(){
@@ -30,7 +31,7 @@ void Physical::setItemWeight(double itemWeight){
 }
 
 double Physical::discount() {
-  return getprice();
+  return getPrice();
 }
 string Physical::ship(){
   stringstream d;
@@ -45,4 +46,5 @@ string Physical::toString(){
   d<<"Price: "<<discount()<<endl;
   d<<"Product Dimensions: "<<getProductDimensions()<<endl;
   d<<"Item Weight: "<<getItemWeight()<<endl;
+  return d.str();
 }

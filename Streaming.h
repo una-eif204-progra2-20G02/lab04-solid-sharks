@@ -5,14 +5,14 @@
 #ifndef LAB04_SOLID_STREAMING_H
 #define LAB04_SOLID_STREAMING_H
 #include "Game.h"
-#include "IReplace"
+#include "IReplace.h"
 
-class Streaming : public Game,IReplace{
+class Streaming : public Game,public IReplace{
   public:
   Streaming();
   Streaming(string,double,double);
-  string toString();
-  string replace();
+  string toString()override;
+  string replace()override;
   private:
   
 };

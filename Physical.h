@@ -7,8 +7,9 @@
 #include <sstream>
 #include "Game.h"
 #include "IShip.h"
+#include "IDiscount.h"
 
-class Physical: public Game, IShip, IDiscount  {
+class Physical: public Game,public IShip,public IDiscount  {
 public:
 
 Physical();
@@ -17,9 +18,9 @@ string getProductDimensions();
 void setProductDimensions(string);
 double getItemWeight();
 void setItemWeight(double);
-string ship();
-string toString();
-double discount override();
+string ship()override;
+string toString()override;
+double discount()override;
 
 private:
 string productDimensions;

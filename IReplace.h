@@ -9,5 +9,5 @@
 
 class IReplace{
 public:
-    virtual std::string replace();
+    virtual std::string replace()=0;
 };
